@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Information</title>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <form method="POST" action="{{ url_for('send') }}">
+        <label for="param1">Param 1:</label>
+        <input type="text" id="param1" name="param1"><br>
+
+        <label for="param2">Param 2:</label>
+        <input type="text" id="param2" name="param2"><br>
+
+        <label for="param3">Param 3:</label>
+        <input type="text" id="param3" name="param3"><br>
+
+        <label for="param4">Param 4:</label>
+        <input type="text" id="param4" name="param4"><br>
+
+        <label for="param5">Param 5:</label>
+        <input type="text" id="param5" name="param5"><br>
+
+        <label for="param6">Param 6:</label>
+        <input type="text" id="param6" name="param6"><br>
+
+        <input type="submit" value="Save and Email">
+    </form>
+</body>
+</html>
